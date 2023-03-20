@@ -1,6 +1,33 @@
 let nums = [1, 2, 3, 4, 5];
 let arr1 = [20, 40, 60, 80, 3];
 
+const pokemons = [
+  {
+    name: "Pikachu",
+    type: "lightning",
+    damage: 20,
+  },
+  {
+    name: "Machamp",
+    type: "fighting",
+    damage: 60,
+  },
+  {
+    name: "Mew",
+    type: "psychic",
+    damage: 30,
+  },
+  {
+    name: "Charizard",
+    type: "fire",
+    damage: 100,
+  },
+];
+
+pokemons.forEach((pokemon) => {
+  console.log(pokemon.name, pokemon.damage);
+});
+
 nums.reduce((sum, num) => {
   return sum + num;
 }, 0);
